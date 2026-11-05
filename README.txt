@@ -46,3 +46,13 @@ VERSION 4 — NOUVELLE ORGANISATION + RAPPELS SANS NOTIFICATIONS
 - ntfy reste disponible dans Rappels > Avancé.
 - Réglages > Calendrier d'alternance : les semaines après le 22/02/2027 sont en « Cours » par défaut ; corrige-les (Cours / Stage / Vacances).
 Remplace TOUS les fichiers du dépôt Routine (index.html, service-worker.js, manifest.json, icônes).
+
+VERSION 5 — FIABILITÉ (phases 1 à 4 du cahier des charges)
+- Les mêmes fichiers servent pour Routine et TEST-ROUTINE-TEST : si l'adresse contient « test », l'appli passe en mode TEST (bandeau rouge, clés « test:… », aucune lecture/écriture des cours de Multi-DA).
+- Dates : tout est calculé en date locale (le décalage d'un jour vers minuit et sur les jalons J+ est corrigé).
+- Restauration : confirmation avec la version/date du fichier, sauvegarde automatique téléchargée avant, clés TEST jamais mélangées à la production.
+- Service worker : cache propre à Routine, ne supprime plus les caches des autres applis. Version affichée dans Réglages.
+
+VERSION 6 — ÉCOSYSTÈME
+- Bouton 🧭 « Mon écosystème » : accès aux trois applications avec statut (Synchronisé, Données anciennes, Non connecté).
+- Suivi > Sommeil et énergie : saisie unique qui alimente LIFE-PROJECT (source officielle des données santé) ; conflit signalé si une valeur différente existe déjà.
