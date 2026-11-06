@@ -56,3 +56,12 @@ VERSION 5 — FIABILITÉ (phases 1 à 4 du cahier des charges)
 VERSION 6 — ÉCOSYSTÈME
 - Bouton 🧭 « Mon écosystème » : accès aux trois applications avec statut (Synchronisé, Données anciennes, Non connecté).
 - Suivi > Sommeil et énergie : saisie unique qui alimente LIFE-PROJECT (source officielle des données santé) ; conflit signalé si une valeur différente existe déjà.
+
+VERSION 8 — COMPLÉTÉ
+- Mêmes fichiers pour Routine et TEST-ROUTINE-TEST (mode TEST automatique, clés « test:… »). En TEST, Routine lit et met à jour Multi-DA TEST (cours, TD, stages, QCM, validations de révision).
+- Huit jalons de révision (J+0, 1, 2, 3, 7, 15, 21, 30), intervalles personnalisables dans Réglages (partagés avec Multi-DA). Les anciens cours ne génèrent pas de faux retard.
+- Calendrier : outil « Du … au … » pour remplir Cours / Stage / Vacances / Semaine de révisions ; vue mensuelle ; prochaines échéances ; import d'un agenda .ics ; épreuves et échéances configurables (rappel la veille à 18:00).
+- Rappels : rappels personnalisés répétitifs, report 5/10/15 min, export .ics par catégorie, ntfy avec contenu générique par défaut.
+- Organisation : « ⏭ Demain » pour reporter une tâche, imprévus (temps perdu), tâches reportées, blocs optionnels signalés. Modes Normal, Rattrapage, Examens, Minimal conservés.
+- Suivi : bilan des 30 jours, régularité, objectifs personnels, saisie unique sommeil/énergie vers LIFE-PROJECT.
+- Export : uniquement les données de Routine.
